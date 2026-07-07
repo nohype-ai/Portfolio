@@ -81,7 +81,7 @@ class Projection: ObservableObject {
     
     @discardableResult
     private static func save(_ investmentAssumption: InvestmentAssumption) -> InvestmentAssumption {
-        if let data = investmentAssumption.encode() {
+        if let data = try? investmentAssumption.encode() {
             UserDefaults.standard.set(data, forKey: investmentAssumptionUserDefaultsKey)
         } else {
             print("Oh no 😱")

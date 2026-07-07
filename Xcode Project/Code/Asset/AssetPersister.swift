@@ -5,7 +5,7 @@ import SwiftyToolz
 struct AssetPersister {
     
     static func save(_ assets: [Asset]) {
-        guard let assetsPropertiesData = assets.map({ $0.properties }).encode() else {
+        guard let assetsPropertiesData = try? assets.map({ $0.properties }).encode() else {
             return log(error: "couldn't encode assets")
         }
         
@@ -17,7 +17,7 @@ struct AssetPersister {
             return []
         }
         
-        guard let assetsProperties = [Asset.Properties](assetsPropertiesData) else {
+        guard let assetsProperties = try? [Asset.Properties](jsonData: assetsPropertiesData) else {
             log(error: "could not decode assets")
             return []
         }

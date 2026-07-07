@@ -1,4 +1,4 @@
-import SwiftUIToolzOLD
+import SwiftUIToolz
 import SwiftUI
 
 struct AlertsView: View {

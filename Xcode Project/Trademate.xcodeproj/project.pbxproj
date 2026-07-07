@@ -34,6 +34,12 @@
 		96709FA32749257600D246CE /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96945E2226D9505A0091B9CF /* AlertsView.swift */; };
 		96709FA4274929A600D246CE /* Portfolio+DisplayString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96945E3226D9505A0091B9CF /* Portfolio+DisplayString.swift */; };
 		9674DF582BF95DB8009F2DBE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674DF572BF95DB8009F2DBE /* SettingsView.swift */; };
+		96767AC22FFD3F04000D1C85 /* FoundationToolz in Frameworks */ = {isa = PBXBuildFile; productRef = 96767AC12FFD3F04000D1C85 /* FoundationToolz */; };
+		96767AC42FFD3F23000D1C85 /* FoundationToolz in Frameworks */ = {isa = PBXBuildFile; productRef = 96767AC32FFD3F23000D1C85 /* FoundationToolz */; };
+		96767AC62FFD3F37000D1C85 /* CombineObserver in Frameworks */ = {isa = PBXBuildFile; productRef = 96767AC52FFD3F37000D1C85 /* CombineObserver */; };
+		96767AC82FFD3F41000D1C85 /* SwiftObserver in Frameworks */ = {isa = PBXBuildFile; productRef = 96767AC72FFD3F41000D1C85 /* SwiftObserver */; };
+		96767ACB2FFD3F83000D1C85 /* SwiftUIToolz in Frameworks */ = {isa = PBXBuildFile; productRef = 96767ACA2FFD3F83000D1C85 /* SwiftUIToolz */; };
+		96767ACD2FFD3F8C000D1C85 /* SwiftUIToolz in Frameworks */ = {isa = PBXBuildFile; productRef = 96767ACC2FFD3F8C000D1C85 /* SwiftUIToolz */; };
 		96945DFE26D93BC80091B9CF /* ContentView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96945DFD26D93BC80091B9CF /* ContentView_macOS.swift */; };
 		96945E6226D950720091B9CF /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96945E2226D9505A0091B9CF /* AlertsView.swift */; };
 		96945E6426D950720091B9CF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96945E2326D9505A0091B9CF /* AppSettings.swift */; };
@@ -66,12 +72,8 @@
 		96B73E9526DBA60E00EE7AC0 /* FeedbackContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B73E9426DBA60E00EE7AC0 /* FeedbackContents.swift */; };
 		96B73E9626DBA60E00EE7AC0 /* FeedbackContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B73E9426DBA60E00EE7AC0 /* FeedbackContents.swift */; };
 		96B73E9926DBA63700EE7AC0 /* FeedbackView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B73E9726DBA63700EE7AC0 /* FeedbackView_macOS.swift */; };
-		96C4840D292F9D00005DA0AB /* SwiftUIToolzOLD in Frameworks */ = {isa = PBXBuildFile; productRef = 96C4840C292F9D00005DA0AB /* SwiftUIToolzOLD */; };
-		96C4840F292F9D2E005DA0AB /* SwiftUIToolzOLD in Frameworks */ = {isa = PBXBuildFile; productRef = 96C4840E292F9D2E005DA0AB /* SwiftUIToolzOLD */; };
-		96E03933282687D400757E4D /* FoundationToolz in Frameworks */ = {isa = PBXBuildFile; productRef = 96E03932282687D400757E4D /* FoundationToolz */; };
 		96E03935282687F000757E4D /* SwiftyToolz in Frameworks */ = {isa = PBXBuildFile; productRef = 96E03934282687F000757E4D /* SwiftyToolz */; };
 		96E039392826880400757E4D /* SwiftyToolz in Frameworks */ = {isa = PBXBuildFile; productRef = 96E039382826880400757E4D /* SwiftyToolz */; };
-		96E0393D2826880400757E4D /* FoundationToolz in Frameworks */ = {isa = PBXBuildFile; productRef = 96E0393C2826880400757E4D /* FoundationToolz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,9 +147,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C4840D292F9D00005DA0AB /* SwiftUIToolzOLD in Frameworks */,
-				96E0393D2826880400757E4D /* FoundationToolz in Frameworks */,
+				96767AC22FFD3F04000D1C85 /* FoundationToolz in Frameworks */,
 				96E039392826880400757E4D /* SwiftyToolz in Frameworks */,
+				96767AC82FFD3F41000D1C85 /* SwiftObserver in Frameworks */,
+				96767AC62FFD3F37000D1C85 /* CombineObserver in Frameworks */,
+				96767ACB2FFD3F83000D1C85 /* SwiftUIToolz in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,9 +161,9 @@
 			files = (
 				965B86082B89F828001C69F6 /* CombineObserver in Frameworks */,
 				965B860A2B89F828001C69F6 /* SwiftObserver in Frameworks */,
-				96E03933282687D400757E4D /* FoundationToolz in Frameworks */,
-				96C4840F292F9D2E005DA0AB /* SwiftUIToolzOLD in Frameworks */,
+				96767AC42FFD3F23000D1C85 /* FoundationToolz in Frameworks */,
 				96E03935282687F000757E4D /* SwiftyToolz in Frameworks */,
+				96767ACD2FFD3F8C000D1C85 /* SwiftUIToolz in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +374,10 @@
 			name = "Trademate (iOS)";
 			packageProductDependencies = (
 				96E039382826880400757E4D /* SwiftyToolz */,
-				96E0393C2826880400757E4D /* FoundationToolz */,
-				96C4840C292F9D00005DA0AB /* SwiftUIToolzOLD */,
+				96767AC12FFD3F04000D1C85 /* FoundationToolz */,
+				96767AC52FFD3F37000D1C85 /* CombineObserver */,
+				96767AC72FFD3F41000D1C85 /* SwiftObserver */,
+				96767ACA2FFD3F83000D1C85 /* SwiftUIToolz */,
 			);
 			productName = "Trademate (iOS)";
 			productReference = 9633392D26D76305000F26C2 /* Portfolio.app */;
@@ -391,11 +397,11 @@
 			);
 			name = "Trademate (macOS)";
 			packageProductDependencies = (
-				96E03932282687D400757E4D /* FoundationToolz */,
 				96E03934282687F000757E4D /* SwiftyToolz */,
-				96C4840E292F9D2E005DA0AB /* SwiftUIToolzOLD */,
 				965B86072B89F828001C69F6 /* CombineObserver */,
 				965B86092B89F828001C69F6 /* SwiftObserver */,
+				96767AC32FFD3F23000D1C85 /* FoundationToolz */,
+				96767ACC2FFD3F8C000D1C85 /* SwiftUIToolz */,
 			);
 			productName = "Trademate (macOS)";
 			productReference = 9633393526D76305000F26C2 /* Portfolio.app */;
@@ -474,9 +480,9 @@
 			mainGroup = 9633392026D76304000F26C2;
 			packageReferences = (
 				96945DFF26D949B10091B9CF /* XCRemoteSwiftPackageReference "SwiftyToolz" */,
-				96945E0326D949ED0091B9CF /* XCRemoteSwiftPackageReference "FoundationToolz" */,
-				96C4840B292F9D00005DA0AB /* XCRemoteSwiftPackageReference "SwiftUIToolzOLD" */,
 				965B86062B89F828001C69F6 /* XCRemoteSwiftPackageReference "SwiftObserver" */,
+				96767AC02FFD3F04000D1C85 /* XCRemoteSwiftPackageReference "FoundationToolz" */,
+				96767AC92FFD3F72000D1C85 /* XCRemoteSwiftPackageReference "SwiftUIToolz" */,
 			);
 			productRefGroup = 9633392E26D76305000F26C2 /* Products */;
 			projectDirPath = "";
@@ -1018,34 +1024,34 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		965B86062B89F828001C69F6 /* XCRemoteSwiftPackageReference "SwiftObserver" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/codeface-io/SwiftObserver";
+			repositoryURL = "https://github.com/nohype-ai/SwiftObserver";
 			requirement = {
 				kind = exactVersion;
-				version = 8.0.0;
+				version = 8.0.2;
+			};
+		};
+		96767AC02FFD3F04000D1C85 /* XCRemoteSwiftPackageReference "FoundationToolz" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nohype-ai/FoundationToolz";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.9;
+			};
+		};
+		96767AC92FFD3F72000D1C85 /* XCRemoteSwiftPackageReference "SwiftUIToolz" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nohype-ai/SwiftUIToolz";
+			requirement = {
+				kind = exactVersion;
+				version = 0.3.3;
 			};
 		};
 		96945DFF26D949B10091B9CF /* XCRemoteSwiftPackageReference "SwiftyToolz" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/flowtoolz/SwiftyToolz";
+			repositoryURL = "https://github.com/nohype-ai/SwiftyToolz";
 			requirement = {
 				kind = exactVersion;
-				version = 0.5.1;
-			};
-		};
-		96945E0326D949ED0091B9CF /* XCRemoteSwiftPackageReference "FoundationToolz" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/flowtoolz/FoundationToolz";
-			requirement = {
-				kind = exactVersion;
-				version = 0.4.1;
-			};
-		};
-		96C4840B292F9D00005DA0AB /* XCRemoteSwiftPackageReference "SwiftUIToolzOLD" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/flowtoolz/SwiftUIToolzOLD";
-			requirement = {
-				kind = exactVersion;
-				version = 0.3.10;
+				version = 0.5.7;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1061,20 +1067,35 @@
 			package = 965B86062B89F828001C69F6 /* XCRemoteSwiftPackageReference "SwiftObserver" */;
 			productName = SwiftObserver;
 		};
-		96C4840C292F9D00005DA0AB /* SwiftUIToolzOLD */ = {
+		96767AC12FFD3F04000D1C85 /* FoundationToolz */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 96C4840B292F9D00005DA0AB /* XCRemoteSwiftPackageReference "SwiftUIToolzOLD" */;
-			productName = SwiftUIToolzOLD;
-		};
-		96C4840E292F9D2E005DA0AB /* SwiftUIToolzOLD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 96C4840B292F9D00005DA0AB /* XCRemoteSwiftPackageReference "SwiftUIToolzOLD" */;
-			productName = SwiftUIToolzOLD;
-		};
-		96E03932282687D400757E4D /* FoundationToolz */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 96945E0326D949ED0091B9CF /* XCRemoteSwiftPackageReference "FoundationToolz" */;
+			package = 96767AC02FFD3F04000D1C85 /* XCRemoteSwiftPackageReference "FoundationToolz" */;
 			productName = FoundationToolz;
+		};
+		96767AC32FFD3F23000D1C85 /* FoundationToolz */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96767AC02FFD3F04000D1C85 /* XCRemoteSwiftPackageReference "FoundationToolz" */;
+			productName = FoundationToolz;
+		};
+		96767AC52FFD3F37000D1C85 /* CombineObserver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 965B86062B89F828001C69F6 /* XCRemoteSwiftPackageReference "SwiftObserver" */;
+			productName = CombineObserver;
+		};
+		96767AC72FFD3F41000D1C85 /* SwiftObserver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 965B86062B89F828001C69F6 /* XCRemoteSwiftPackageReference "SwiftObserver" */;
+			productName = SwiftObserver;
+		};
+		96767ACA2FFD3F83000D1C85 /* SwiftUIToolz */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96767AC92FFD3F72000D1C85 /* XCRemoteSwiftPackageReference "SwiftUIToolz" */;
+			productName = SwiftUIToolz;
+		};
+		96767ACC2FFD3F8C000D1C85 /* SwiftUIToolz */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96767AC92FFD3F72000D1C85 /* XCRemoteSwiftPackageReference "SwiftUIToolz" */;
+			productName = SwiftUIToolz;
 		};
 		96E03934282687F000757E4D /* SwiftyToolz */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1085,11 +1106,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 96945DFF26D949B10091B9CF /* XCRemoteSwiftPackageReference "SwiftyToolz" */;
 			productName = SwiftyToolz;
-		};
-		96E0393C2826880400757E4D /* FoundationToolz */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 96945E0326D949ED0091B9CF /* XCRemoteSwiftPackageReference "FoundationToolz" */;
-			productName = FoundationToolz;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

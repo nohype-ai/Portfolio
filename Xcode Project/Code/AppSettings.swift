@@ -17,7 +17,7 @@ private struct CurrencyPersister {
             return .usDollar
         }
         
-        guard let decodedCurrency = Currency(data) else {
+        guard let decodedCurrency = try? Currency(jsonData: data) else {
             log(error: "Couldn't decode portfolio currency")
             return .usDollar
         }
@@ -26,7 +26,7 @@ private struct CurrencyPersister {
     }
     
     static func save(_ currency: Currency) {
-        guard let data = currency.encode() else {
+        guard let data = try? currency.encode() else {
             return log(error: "couldn't encode portfolio currency")
         }
         UserDefaults.standard.set(data, forKey: currencyKey)
